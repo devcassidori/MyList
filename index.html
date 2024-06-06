@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My List </title>
+    <link rel="shortcut icon" href="lista-icon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <!-- Background -->
+    <video autoplay muted loop id="myVideo">
+        <source src="fundo1.mp4" type="video/mp4" />
+    </video>
+    <!-- My List -->
+    <main class="center">
+        <div class="content">
+            <div id="myDIV" class="header">
+                <div style="display: flex;justify-content: center;">
+                    <h2 style="margin: 5px" id="title">My List!</h2>
+                </div>
+                <br />
+                <input type="text" id="myInput" placeholder="Title..." />
+                <button onclick="newElement()" class="addBtn"><strong>ADD</strong></button>
+            </div>
+            <div id="divList">
+                <ul id="myUL">
+                    <!-- Items here! -->
+                    <li>First Item</li>
+                    <li class="checked">Second Item</li>
+                    <li>Third Item</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
